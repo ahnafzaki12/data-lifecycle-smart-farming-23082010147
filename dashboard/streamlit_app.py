@@ -15,7 +15,7 @@ def load_data():
         df = pd.read_csv('outputs/cleaned_data.csv')
     except FileNotFoundError:
         try:
-            df = pd.read_csv('dashboard/outputs/cleaned_data.csv')
+            df = pd.read_csv('outputs/cleaned_data.csv')
         except FileNotFoundError:
             st.error("File data tidak ditemukan. Pastikan path 'cleaned_data.csv' benar.")
             return pd.DataFrame()
